@@ -16,10 +16,12 @@
 
 .p-img {
     width: 100%;
-}
+    height: 200px;
+    max-height: 200px;
+    object-fit:cover;
+    padding: 5px;
+    border-radius: 15px;
 
-.p:hover .p.img {
-    transform: translateY(-100%);
 }
 
 .p-item {
@@ -31,11 +33,15 @@
     transition: var(--transition);
 }
 
+.p-title {
+    font-size: 1.5rem !important;
+}
+
 .p-card {
     margin: 20px 30px;
     border-radius: 15px;
     overflow: hidden;
-    height: auto;
+    height: 26rem;
     width: 18rem;
 }
 

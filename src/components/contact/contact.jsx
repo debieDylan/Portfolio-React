@@ -74,7 +74,7 @@ const Contact = () => {
                             2170 Merksem, Antwerp Belgium
                         </div>
                         <div className="contact-info-item">
-                            <a href="https://github.com/debieDylan?tab=repositories" target="_blank">
+                            <a href="https://github.com/debieDylan?tab=repositories" target="_blank" rel="noreferrer">
                                 {<FaGithub className="contact-icon" size={30} />}
                                 My Github
                             </a>
@@ -88,6 +88,7 @@ const Contact = () => {
                             <input type="text" className="field" placeholder="Subject" required={true}/>
                             <textarea type="text" className="field area" placeholder="message" required={true}></textarea>
                             <button className="btn">Send</button>
+                            {done && " Thanks for sending a message!"}
                         </form>
                     </div>
                 </div>

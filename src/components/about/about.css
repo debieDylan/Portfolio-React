@@ -45,6 +45,7 @@
 
 .about-sub {
     margin: 20px 0px;
+    padding-right: 50px;
 }
 
 .about-description {
@@ -117,10 +118,10 @@
         padding: 20px;
     }
 
-    .about-skills-text {
-        flex: 4;
+    .about-sub {
         padding-right: 0px;
     }
+    
     .about-icon-item {
         transform: translateX(0px);
     }
