@@ -1,0 +1,133 @@
+.about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+.about-right {
+    flex: 1;
+    height: 100%;
+}
+
+.about-card {
+    width: 60%;
+    height: 70vh;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-card.bg {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: rgb(242,242,242);
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-title {
+    font-weight: 400;
+}
+
+.about-sub {
+    margin: 20px 0px;
+}
+
+.about-description {
+    font-weight: 300;
+}
+
+.about-skills-text {
+    flex: 4;
+    padding-right: 50px;
+}
+
+.about-icons {
+    position: relative;
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+}
+
+.about-icons::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.about-icon-item {
+    color: rgb(157, 195, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 2/1;
+    transform: translateX(-20px);
+}
+
+.about-icons-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px){
+    .about {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+        height: 100%;
+    }
+
+    .about-left {
+        width: 100%;
+    }
+
+    .about-card {
+        height: 18rem;
+        width: 18rem;
+    }
+
+    .about-card.bg {
+        display: none;
+    }
+
+    .about-right {
+        padding: 20px;
+    }
+
+    .about-skills-text {
+        flex: 4;
+        padding-right: 0px;
+    }
+    .about-icon-item {
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 607px) {
+    .about-icons {
+        display: none;
+    }
+}
