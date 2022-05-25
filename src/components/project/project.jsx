@@ -12,9 +12,9 @@ const Project = ({ name, desc, img, link, github }) => {
             </Card.Body>
             <Card.Footer>
             <Row xs={2}>
-                    <Col>
+                    {link !== undefined ? <Col>
                     <Button href={link} target="_blank" rel="noreferrer">Demo</Button>
-                    </Col>
+                    </Col> : <></>}
                     <Col>
                     <Button href={github} target="_blank" rel="noreferrer">Github</Button>
                     </Col>

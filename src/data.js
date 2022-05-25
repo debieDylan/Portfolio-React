@@ -16,14 +16,14 @@ export const projects = [
         desc: "The portfolio you are watching now. A static website written with React.",
         img: portfolio,
         link: 'https://dylan-de-bie.com/',
-        github: ""
+        github: "https://github.com/debieDylan/Portfolio-React"
     },
     {
         id: 3,
         name: "Project 3",
         desc: "",
         img: "",
-        link: "",
+        link: undefined,
         github: ""
     }
 ]
