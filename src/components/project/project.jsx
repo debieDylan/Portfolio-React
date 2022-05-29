@@ -13,10 +13,10 @@ const Project = ({ name, desc, img, link, github }) => {
             <Card.Footer>
             <Row xs={2}>
                     {link !== undefined ? <Col>
-                    <Button href={link} target="_blank" rel="noreferrer">Demo</Button>
+                    <Button href={link} target="_blank" rel="noreferrer" onClick={(e) => e.target.blur()}>Demo</Button>
                     </Col> : <></>}
                     <Col>
-                    <Button href={github} target="_blank" rel="noreferrer">Github</Button>
+                    <Button href={github} target="_blank" rel="noreferrer" onClick={(e) => e.target.blur()}>Github</Button>
                     </Col>
                 </Row>
             </Card.Footer>

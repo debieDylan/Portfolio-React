@@ -1,11 +1,6 @@
 import "./about.css"
 import profile from '../../assets/images/profile-w-min.jpg'
 
-import { SiDotnet, SiTypescript, SiFirebase } from 'react-icons/si'
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaAngular } from 'react-icons/fa'
-import { IoLogoIonic } from 'react-icons/io'
-import { Row, Col, Container } from 'react-bootstrap'
-
 const About = () => {
     return (
         <section id="about" className="about">
@@ -37,71 +32,6 @@ const About = () => {
                         aswell as NoSQL-databases such as Google Firebase.
                     </p>
                 </div>
-
-                {/*
-                    <Container className="about-icons">
-                        <Row>
-                            <Col>
-                                <div className="about-icon-item">
-                                    <FaHtml5 size={30} />
-                                    HTML5
-                                </div>
-                            </Col>
-                            <Col>
-                                <div className="about-icon-item">
-                                    <FaCss3Alt size={30} />
-                                    CSS3
-                                </div>
-                            </Col>
-                            <Col>
-                                <div className="about-icon-item">
-                                    <FaJsSquare size={30} />
-                                    Javascript
-                                </div>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <div className="about-icon-item">
-                                    <SiTypescript size={30} />
-                                    Typescript
-                                </div>
-                            </Col>
-                            <Col>
-                                <div className="about-icon-item">
-                                    <SiDotnet size={30} />
-                                    .Net/ASP
-                                </div>
-                            </Col>
-                            <Col>
-                                <div className="about-icon-item">
-                                    <FaReact size={30} />
-                                    React
-                                </div>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <div className="about-icon-item">
-                                    <FaAngular size={30} />
-                                    Angular
-                                </div>
-                            </Col>
-                            <Col>
-                                <div className="about-icon-item">
-                                    <IoLogoIonic size={30} />
-                                    Ionic
-                                </div>
-                            </Col>
-                            <Col>
-                                <div className="about-icon-item">
-                                    <SiFirebase size={30} />
-                                    Firebase
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>
-    */}
             </div>
         </section >
     )

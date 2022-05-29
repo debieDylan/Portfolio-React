@@ -9,7 +9,10 @@ const ProjectList = () => {
             <div className="project-bg"></div>
             <div className="project-texts">
                 <h1 className="project-title">Projects</h1>
-                <p className="project-description">A couple of my projects I made during my education.</p>
+                <p className="project-description">
+                    A couple of my projects I made during my education.
+                    Visit my <a href="https://github.com/debieDylan" target="_blank" rel="noreferrer">Github</a> for all my projects.
+                </p>
             </div>
             <Row xs={1} md={1} lg={2} xl={3} className="project-list">
                 {projects.map(item => (

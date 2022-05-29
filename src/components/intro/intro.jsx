@@ -1,10 +1,12 @@
-import "./intro.css"
+import "./intro.scss"
 import CV from '../../assets/files/cv.pdf'
 import Me from '../../assets/images/Me-small-min.png'
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa"
 
 const Intro = () => {
     return (
         <section id="intro" className="intro">
+            <div className="scroll-down">Scroll Down</div>
             <div className="intro-left">
                 <div className="intro-left-wrapper">
                     <h2 className="intro-prename">Hello, My name is</h2>
@@ -22,13 +24,12 @@ const Intro = () => {
                         and designing modern websites, responsive apps and services of all sizes.
                     </div>
                     <div className="intro-buttons">
-                    <a href={CV} download className="btn intro-button">
-                        Download CV
-                    </a>
-                    <br></br>
-                    <a href="#contact" className="btn intro-button">
-                        Contact Me
-                    </a>
+                        <a href={CV} download className="btn intro-button" onClick={(e) => e.target.blur()}>Download CV</a>
+                        <a href="#contact" className="btn intro-button" onClick={(e) => e.target.blur()}>Contact Me</a>
+                    </div>
+                    <div className="intro-socials">
+                        <a href="https://github.com/debieDylan" target="_blank" rel="noreferrer"><FaGithubSquare size={70}/></a>
+                        <a href="https://www.linkedin.com/in/dylan-de-bie-12ba461b4/" target="_blank" rel="noreferrer"><FaLinkedin  size={70}/></a>
                     </div>
                 </div>
             </div>

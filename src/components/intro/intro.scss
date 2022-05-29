@@ -5,6 +5,13 @@
     background-color: rgb(255, 255, 255);
 }
 
+.scroll-down {
+    position: absolute;
+    left: -2.3rem;
+    bottom: 3rem;
+    transform: rotate(-90deg);
+}
+
 .intro-left {
     flex: 1;
     display: flex;
@@ -47,10 +54,38 @@
 
 .intro-buttons {
     display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    .intro-button {
+        width: 20vh;
+        transition: all 0.5s ease;
+    
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
 
-.intro-button {
-    margin-right: 10px;
+.intro-socials {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    z-index: 3;
+    justify-content: space-evenly;
+    height: 40%;
+    
+
+    a {
+        text-decoration: none;
+        color: white;
+        transition: all 0.5s ease;
+    }
+
+    a:hover {
+        transform: scale(1.1);
+    }
 }
 
 @keyframes move {
@@ -125,14 +160,26 @@
 
     .intro-buttons {
         display: flex;
-        justify-content: center;
-        align-items: baseline;
+        justify-content: baseline;
+        align-items: center;
         flex-direction: column;
+        z-index: 10;
     }
 
     .intro-button {
-        width: 10rem;
-        padding: 5px;
+        margin: 15px 0px 5px 0px;
+    }
+
+    .intro-socials {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 60%;
+        width: 90%;
+
+        a {
+            color:rgb(157, 195, 230);
+        }
     }
 }
 

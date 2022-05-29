@@ -1,14 +1,15 @@
 import mycookbook from './assets/images/mycookbook.png'
-import portfolio from './assets/images/portfolio.png'
+import portfolio from './assets/images/portfolio-min.png'
+import projectML from './assets/images/projectML-min.jpg'
 
 export const projects = [
     {
         id: 1,
         name: "MyCookbook",
-        desc: "A mobile Recipe organizer, powered by Ionic framework and Firebase backend.",
+        desc: "A mobile Recipe organizer, made with Ionic, Angular and Firebase, includes API.",
         img: mycookbook,
         link: "https://mycookbook-87252.web.app/",
-        github: "https://github.com/debieDylan/myCookbook"
+        github: "https://github.com/debieDylan/mycookbook-public"
     },
     {
         id: 2,
@@ -20,10 +21,10 @@ export const projects = [
     },
     {
         id: 3,
-        name: "Project 3",
-        desc: "",
-        img: "",
+        name: "Genre Predictor",
+        desc: "A .NET application that uses Machine Learning to predict the genre of a movie.",
+        img: projectML,
         link: undefined,
-        github: ""
+        github: "https://github.com/debieDylan/Movie-Genre-Predictor"
     }
 ]
